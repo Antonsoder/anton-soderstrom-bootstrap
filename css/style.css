@@ -1,20 +1,53 @@
-.container{
+nav{
+    background: black;
+    padding: 5px 40px;
+}
+  
+nav ul{
+    list-style:none;
+    display: flex; /*Allt inom denna clasen stannar på samma rad*/
+    flex-wrap: wrap; /*Om ett objekt inte får plats så åker den under längst till vänster*/
+    align-items: center;
+    justify-content: center;
+}
+  
+nav ul li{
+    padding: 15px 0;
+    cursor: pointer;
+}
+  
+nav ul li.Meny{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+  
+nav ul li.logga{
+    flex: 1; /*Flex 1 gör så att en logga tar upp all plats från kant till kant i en viss ram*/
+    color: white;
+    font-size: 23px;
     font-weight: 600;
-    font-size: large;
+    cursor: default;
+    user-select: none;
+}
+  
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav ul li:hover a{
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+.element {
     background-color: green;
-}
-
-.john{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    bottom: 0;
-    left: 35%;
-    width: 400px;
-    padding: 1.25rem;
-    border-radius: calc(0.25rem - 1px);
-}
-
-.btn{
-    background-color: blue;
 }
