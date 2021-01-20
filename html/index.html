@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> <!-- Använder mig utav jquery för att enkelt kunna få in javasvript i min navbar. Anledningen till detta är för att om man förminsakr sin sida så ska det komma upp en roll-down bar istället--> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Information</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"> <!-- Länkar min index.html fil med bootstraps css-->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Kopplar min index.html med min egna css. Denna css'en prioriteras, dvs att mkin egna css skriver över bootstraps css.-->
+    <title>Information</title> <!-- Titeln för hemsidan-->
 </head>
 <body>
 
@@ -73,22 +73,22 @@
 
 
 
-<div class="container" id="element">
-
+<div class="container" id="element"> <!-- Men behöver båda en class som är container samt ett id. Man vill att ett ämne ska ligga i varje conatinern för att separera varje ämne som man skriver om.-->
+<!-- Id använder man för att i navbaren och i fottern kunna trycka på ett ord och sen bli "transporterad" till just den delen om det ordet.-->
   <h1>Element</h1>
 
-  <div class="image"> 
-      <img src="../bilder/Element.png" class="img-fluid"> 
+  <div class="image"> <!-- Man gör en egen class på biolden eftersom man vill skriva ut villkor för bilden utan att det påverkar resten av containern.-->
+    <img src="../bilder/Element.png" class="img-fluid"> <!-- Img-fluid använder man i bootstrap för att göra en bild responsive. Anledningen till att man skriver img-fluid är för att nootstrap redan har en class som heter så och inuti den classen står det kod som gör bilder responsive.-->
   </div>
 
   <p> Element är en tag. Det kan vara tillexempel, h1, header, footer, div. Dvs alla taggar.
-      <br> Element är starttaggen och sluttaggen samt allting som står mellan starttaggen och sluttaggen.
+      <br> Element är starttaggen och sluttaggen samt allting som står mellan starttaggen och sluttaggen.<!-- br = breakline = ny rad-->
   </p>
 </div>
 
 
 
-
+<!-- Enda ner till footern är det exakt samma kod, därför finns det inga kommentarer där utan det finns bara på den översta.-->
 
 <div class="container" id="html">
 
@@ -236,21 +236,21 @@
 
 
 
-  <div class="container" id="localbootstrap">
+<div class="container" id="localbootstrap">
 
-    <h1>Local Bootstrap</h1>
+  <h1>Local Bootstrap</h1>
   
-    <div class="image">
-      <img src="../bilder/Bootstrap.png" class="img-fluid">
-    </div>
-  
-    <p> Bootstrap hjälper dig med dina html-hemsida. Bootstrap ger dig en färdig css, klar att använda.
-      <br> För att använda din bootstrap-css så räcker det att du använder rätt namn på en class för att koppla den till din bootstrap-css.
-    </p>
-  
-    </div>
-
+  <div class="image">
+    <img src="../bilder/Bootstrap.png" class="img-fluid">
   </div>
+  
+  <p> Bootstrap hjälper dig med dina html-hemsida. Bootstrap ger dig en färdig css, klar att använda.
+    <br> För att använda din bootstrap-css så räcker det att du använder rätt namn på en class för att koppla den till din bootstrap-css.
+  </p>
+  
+  </div>
+
+</div>
 
 <div class="container" id="jquery">
   
