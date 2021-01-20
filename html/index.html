@@ -12,18 +12,21 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Här under kommer allt om navbaren. Eftersom man använder sig utav bootstraps css så är det många konstiga namn på classerna. Men det är därför classerna heter så i bootstrap.-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Bootstrap har redan en navbar som har samma class som mig. Det finns ,assor man jag ahr valt att använda mig utav denna.-->
   
+   <!-- Här under kommer koden om knappen som kommer om man minimerar min sida. Skulle man ta bort denna kdoen så sulle allt försvinna om man minimerar sidan.-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Här kommer koden som gör så att det står, tex element i navbaren samt att man kan trycka på varje ord i navbaren.-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- En class som kopplar navbaren till bootstrap css-->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#element">Element</a>
+          <a class="nav-link" href="#element">Element</a> <!-- a href anvöänds för att man ska kunna trycka på ordet. Att det står #element är för att jag har gjort ett id på min information om element. Och för att koppla denna knappen till min infomration om elemt så behöver man ha ett #-->
         </li>
-        <li class="nav-item">
+        <li class="nav-item"> <!-- Nu är det exakt samma som den översta resten av navbar-koden-->
             <a class="nav-link" href="#html">Html</a>
           </li>
           <li class="nav-item">
@@ -67,12 +70,12 @@
     </div>
   </nav>
 
-<h1>
+<h1> <!-- Min rubrik-->
   Begreppsförklaring
 </h1>
 
-
-
+<!-- Alla ord som jag förklarat i min text ligger i divar som heter exatk samma allihopa, dvs "container". Detta leder till att allt kommer se likadant ut och jag behlver nästan inte skriva något alls i min egna css. -->
+<!-- Nedanför kommer alla min information om alla ord som jag lagt in. Jag använder mig utav samma mall hela tiden, därför har jag bara kommenterat en av orden.-->
 <div class="container" id="element"> <!-- Men behöver båda en class som är container samt ett id. Man vill att ett ämne ska ligga i varje conatinern för att separera varje ämne som man skriver om.-->
 <!-- Id använder man för att i navbaren och i fottern kunna trycka på ett ord och sen bli "transporterad" till just den delen om det ordet.-->
   <h1>Element</h1>
@@ -398,11 +401,9 @@
     </div>
 
   </div>
- 
-
-
 </footer>
 
-
+<!-- För att summera allt så används bootstrap för att man itne ska behöva skriva sin egen css. DEt räcker att man skriver sin egna html fil för att sedan koppla det som man skrivit i sin html till bootstrap css'en. Detta gör man genom att använda samma classer som bootstrap använder.-->
+<!-- Bootstrap är ett enkelt sätt att skapa en responsive hemsida samt för att själv inte behöva skriva all kod.-->
 </body>
 </html>
