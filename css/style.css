@@ -1,18 +1,18 @@
 body {
-    background-image: linear-gradient(54deg, rgba(34,193,195,1), rgba(194,45,253,1));
+    background-image: linear-gradient(54deg, rgba(34,193,195,1), rgba(194,45,253,1)); /*Linear gradient bakgrund leder till att en färg övergår till en annan färg som bakgrund. Och jag har i deta fallet valt att lila ska övergå till en ljudbl färg.*/
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /*För att centrera min rubrik */
 }
 
 .container {
-    text-align: center;
-    margin-top: 100px;
+    text-align: center; /* Alla ord jag besrkiver ligger i samma div som heter container. Detta leder till att allt hamnar i mitten av skärmen.*/
+    margin-top: 100px; /* Mellan varje container så ska det vara ett avstånd med 100 pixlar. */
 
 }
 
 .image {
-    margin: 0 auto;
-    max-width: 40%;
+    margin: 0 auto; /* Detta leder till att alla bilderna i varje conatiner blir responsive */
+    max-width: 40%; /* Detta leder till att bilderna inte kan blir mer än 40% större än vad de ursprungligen va*/
 }
