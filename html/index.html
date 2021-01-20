@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -315,16 +314,16 @@
 </div>
 
 
-<footer class="bg-primary text-white text-center text-lg-start">
+<footer class="bg-primary text-white text-center text-lg-start"><!-- Gör en div för att koppla hela min footer till bootstrap css'en-->
 
-  <div class="container p-4">
+  <div class="container p-4"> <!-- Gör en div för att koppla hela min footer till bootstrap css'en-->
 
-    <div class="row">
+    <div class="row"> <!-- Gör en div för att koppla hela min footer till bootstrap css'en-->
 
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Information</h5>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0"> <!-- Gör en div för att koppla hela min footer till bootstrap css'en-->
+        <h5 class="text-uppercase">Information</h5> <!-- Detta är en div för att veta att ordet INformaton sak stå där det står.-->
 
-        <p>
+        <p> <!-- Texten som sak stå under "information"-->
           I denna hemsidan beskrivs viktiga termer inom webbutvecklingen.
           Hemsidan är gjord med hjälp av Bootstraps css och skaparen av hemsidan är Anton Söderström.
 
@@ -333,14 +332,14 @@
 
 
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Termer</h5>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0"> <!-- Gör en til div med samma namn som en class i bootstraps css för att programmet ska veta att det är just den classen jag refererar till-->
+        <h5 class="text-uppercase">Termer</h5> <!-- Denna classen gör så att programmet vet vart ordet "Termer" ska stå-->
 
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#element" class="text-white">Element</a>
+        <ul class="list-unstyled mb-0"> <!-- Denna classen gör så att programmet sma veta vart min lista med alla termer ska stå, dvs udner ordet "Termer"-->
+          <li> <!-- Eftersom man ska kunna trycka på varje ord så behöver man använda sig utav li och a href-->
+            <a href="#element" class="text-white">Element</a><!-- För att kunan trycka på ett ord så behöver man använda sig utav id för att bli "transporterad" till rätt ord-->
           </li>
-          <li>
+          <li> <!-- Nu är det exakt samma för resten av orden-->
             <a href="#html" class="text-white">Html</a>
           </li>
           <li>
@@ -365,11 +364,11 @@
 
 
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0"> <!-- Här gör jag en ny class för att visa att denna listan ska stå bredvid den andra sidan. Men bootstrap gör så att om man kollar på hemsidan på en telefon så kommer dessa listor ändå hamna under varandra.-->
 
 
         <ul class="list-unstyled">
-          <li>
+          <li> <!-- Allt under här är samma som den tidigare koden. enda skillnaden är att den är possitionerad på ett annat ställe.-->
             <a href="#https" class="text-white">Https</a>
           </li>
           <li>
